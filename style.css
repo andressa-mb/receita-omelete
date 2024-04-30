@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Young-Serif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+    background-color: rgb(243, 229, 216);
+    font-family: Outfit;
+    font-weight: 400;
+}
+
+.corpo {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.imagem img {
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 54px;
+    margin-left: 50px;
+    color: rgb(70, 70, 70);
+}
+
+.description {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(70,70,70);
+}
+
+.preparacao {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(255, 247, 252);
+    border-radius: 20px;
+    color: rgb(70,70,70);
+}
+
+.preparacao h3 {
+    margin-left: 20px;
+    color: rgb(118, 45, 74);
+}
+
+.ingredientes {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(70, 70, 70);
+    border-bottom: 1px solid rgb(224,224,224);
+}
+
+.ingredientes h3 {
+    color: rgb(125, 59, 47);
+    font-size: 32px;
+}
+
+.instrucoes {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(70, 70, 70);
+    border-bottom: 1px solid rgb(224,224,224);
+}
+
+.instrucoes h3 {
+    color: rgb(125, 59, 47);
+    font-size: 32px;
+}
+
+.instrucoes ol {
+    counter-reset: item;
+}
+
+.instrucoes ol li {
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.instrucoes ol li:before {
+    content: counter(item) ".";
+    counter-increment: item;
+    color: rgb(125, 59, 47);
+    margin-right: 5px;
+}
+
+.nutricao {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(70, 70, 70);
+    margin-bottom: 50px;
+}
+
+.nutricao h3 {
+    color: rgb(125, 59, 47);
+    font-size: 32px;
+}
+
+.nutricao table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutricao td {
+    border-bottom: 1px solid rgb(224,224,224);
+}
+
+.nutricao td:nth-child(2) {
+    color: rgb(125, 59, 47);
+    font-weight: 600;
+  }
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 768px){
+    .corpo {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
